@@ -1,0 +1,322 @@
+@font-face {
+    font-family: harry;
+    src: url(HARRY__.TTF) format(true type contornos);
+}
+
+
+* {
+    font-family: "harry";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagens/Fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100h;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo img {
+    margin-top: 20px;
+    width: 90px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/*estilo do cabeçalho*/
+header {
+    padding: 2px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+header a {
+    color: #eeeeee;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-family:"harry", sans-serif; 
+
+}
+
+header nav.menu-desktop a:hover {
+    color: #FFc500;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+/*estilo do menu mobile*/
+.btn-abrir-menu {
+    display: none;
+}
+
+.btn-abrir-menu i {
+    color: #FFc500;
+    font-size: 40px;
+}
+
+.menu-mobile {
+    background-color: #7f0909;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #FFc500;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #FFc500;
+    color: #000;
+}
+
+.overlay-menu {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+
+/*estilo topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+.topo-do-site h1 {
+    font-family: "harry", serif;
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.topo-do-site h1 span {
+    font-family: "harry", serif;
+    color: #D3A625;
+}
+
+
+
+.gallery-image {
+    position: relative;
+    top: 160px;
+    left: -90px;
+    width: 300px;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 100px;
+    margin: -40px;
+    margin-left: 100px;
+    
+    
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}
+
+.popup {
+    width: 600px;
+    height: 400px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7f0909;
+    padding: 10px 4%;
+    border-radius: 80px;
+    box-shadow: 0 8px 8px 8px  rgba(239, 238, 237, 0.97);
+}
+
+#popupImage {
+    width: 350px;
+    margin-top: -1px;
+    margin-left: -30px;
+}
+
+#popupDescription {
+    color: #fff;
+    margin-top: -300px;
+    margin-left: 250px;
+}
+
+footer {
+    font-family: "harry", serif;
+    background-color: #D3A625;
+    color: #fff;
+    padding: 10px;
+    margin-top: 438px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1013px) {
+
+    body {
+        background-image: url(imagens/Fundo.png);
+        background-size: cover;
+        height: 100h;
+
+    }
+
+
+    /*classes gerais*/
+    .flex {
+        flex-direction: column;
+    }
+
+
+    /*cabecalho*/
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .logo img {
+        margin-top: 20px;
+        height: 80px;
+    }
+
+    /*topo do site*/
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+        padding: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    .gallery-image {
+        width: 230px;
+        height: auto; 
+        transition: transform 0.3s ease-in-out;
+        display: block; 
+        margin-bottom: 200px;
+        margin-top: -80px;
+        
+    }
+    
+    .popup {
+        width: 300px;
+        height: 200px;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #7f0909;
+        padding: 10px 4%;
+        border-radius: 50px; 
+        box-shadow: 0 8px 8px rgba(239, 237, 237, 0.97);
+        text-align: center;
+
+    }
+    
+    #popupImage {
+        width: 80px;
+        margin: 20px auto; 
+        height: auto;
+        max-height: 400px;
+        margin-left: 20px;
+        margin-top: 90px;
+    }
+    
+    #popupDescription {
+        text-align: center; 
+        margin-top: -180px; 
+        max-width: 100%;
+        font-size: 12px;
+        margin-left: 10px;
+        word-wrap: break-word; 
+        overflow-wrap: break-word;
+    }
+
+  
+
+    footer {
+        background-color: #D3A625;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        height: 60px;
+    }
+
+}

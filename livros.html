@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="livros.css">
+  </link>
+  <title>Livros</title>
+
+  <script src="menu.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#">
+          <img src="imagens/pomo de ouro 4.png" alt="pomo">
+        </a>
+      </div>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="index.html">Inicial</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="casas.html">Casas</a></li>
+
+        </ul>
+
+      </nav>
+      <div class="btn-abrir-menu" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <nav>
+
+          <ul>
+            <li><a href="index.html">Inícial</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="casas.html">Casas</a></li>
+          </ul>
+        </nav>
+
+      </div><!--menu-mobile-->
+      <div class="overlay-menu" id="overlay-menu"></div>
+
+  </header>
+
+  <main>
+    <section class="topo-do-site">
+      <div class="interface">
+        <div class="flex">
+          <div class="txt-topo-site">
+            <h1>Bem Vindo aos <span>Livros</span></h1>
+
+          </div>
+
+          <div class="livro" onmouseover="aumentarImagem(this)" onmouseout="reduzirImagem(this)">
+            <img src="imagens/pedra filosofal.jpg" alt="Livro 1">
+            <div class="resumo">
+              <p>Harry Potter e a Pedra Filosofal é o primeiro livro da série de sucesso de J.K. Rowling, publicado em
+                1997. O livro conta a história de Harry Potter, um jovem órfão que descobre ser um bruxo ao completar 11
+                anos.
+              </p>
+            </div>
+          </div>
+
+          <div class="livro" onmouseover="aumentarImagem(this)" onmouseout="reduzirImagem(this)">
+            <img src="imagens/camara secreta.jpg" alt="Livro 2">
+            <div class="resumo">
+              <p> Harry Potter é suspeito de ter aberto a Câmara dos Segredos,segundo uma lenda, se esconde um terrível
+                monstro capaz de matar todos os feiticeiros Nascidos-Trouxas da escola..</p>
+            </div>
+          </div>
+
+          <div class="livro" onmouseover="aumentarImagem(this)" onmouseout="reduzirImagem(this)">
+            <img src="imagens/prisioneiro de Askaban.jpg" alt="Livro 3">
+            <div class="resumo">
+              <p>Neste livro, Harry descobre que um perigoso prisioneiro, Sirius Black, escapou da prisão de Azkaban e
+                está à solta. A comunidade mágica está em alerta máximo, pois acredita-se que Black seja um dos
+                seguidores leais do maligno Lord Voldemort.</p>
+            </div>
+          </div>
+
+          <div class="livro" onmouseover="aumentarImagem(this)" onmouseout="reduzirImagem(this)">
+            <img src="imagens/Calice de fogo.jpg" alt="Livro 4">
+            <div class="resumo">
+              <p>Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado
+                seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry.</p>
+            </div>
+          </div>
+
+          <div class="livro" onmouseover="aumentarImagem(this)" onmouseout="reduzirImagem(this)">
+            <img src="imagens/a ordem da fenix.jpg" alt="Livro 5">
+            <div class="resumo">
+              <p> O enredo se inicia com Harry Potter enfrentando desafios monumentais, tanto no mundo dos bruxos quanto
+                no mundo dos trouxas. O Ministério da Magia, em uma tentativa de abafar a verdade sobre o retorno de
+                Lord Voldemort, cria uma campanha de desinformação, retratando Harry como um mentiroso e uma ameaça à
+                comunidade bruxa.</p>
+            </div>
+          </div>
+
+          <div class="livro" onmouseover="aumentarImagem(this)" onmouseout="reduzirImagem(this)">
+            <img src="imagens/o enigma do principe 6.jpg" alt="Livro 6">
+            <div class="resumo">
+              <p> A onda de terror provocada pelo Lorde das Trevas estaria afetando, até mesmo, o mundo dos trouxas
+                (não-bruxos), e sendo agravada pela ação dos dementadores, criaturas mágicas aterrorizantes que “sugam”
+                a esperança e a felicidade das pessoas. Harry, que acabou de completar 16 anos.</p>
+            </div>
+          </div>
+
+          <div class="livro" onmouseover="aumentarImagem(this)" onmouseout="reduzirImagem(this)">
+            <img src="imagens/reliquias da morte7.jpg" alt="Livro 7">
+            <div class="resumo">
+              <p> A narrativa se inicia com Harry deixando a segurança da casa dos Dursley, seus tios trouxas, em meio a
+                uma missão perigosa: localizar e destruir as Horcruxes, objetos que contêm fragmentos da alma do temido
+                Lorde das Trevas, Lord Voldemort. A busca por esses artefatos torna-se a espinha dorsal do enredo,
+                levando Harry, Ron e Hermione a enfrentarem desafios cada vez mais complexos.</p>
+            </div>
+          </div>
+
+
+          <script src="script.js"></script>
+
+        </div>
+    </section>
+    <section>
+      <footer>
+        <p>&copy; 2023 Lucas O. R.. Todos os direitos reservados.</p>
+      </footer>
+    </section>
+</body>
+
+</html>
