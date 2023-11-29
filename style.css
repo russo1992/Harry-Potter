@@ -276,11 +276,13 @@ footer {
     }
 
     footer {
+        font-family: "harry", serif;
         background-color: #D3A625;
         color: #fff;
-        padding: 20px;
-        margin-top: 30px;
         text-align: center;
-        height: 60px;
+        width: 100%;
+        padding: 30px;
+    
     }
+    
 }
