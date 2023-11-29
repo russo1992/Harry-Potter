@@ -202,7 +202,13 @@ section.topo-do-site.flex {
     color: #FFc500;
 }
 
-
+footer {
+    font-family: "harry", serif;
+    background-color: #D3A625;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 1013px) {
@@ -269,6 +275,14 @@ section.topo-do-site.flex {
         display: block;
     }
 
-   
+    footer {
+        font-family: "harry", serif;
+        background-color: #D3A625;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+    
+    }
     
 }
