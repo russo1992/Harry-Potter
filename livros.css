@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100h;
+    min-height: 100vh;
 }
 
 .interface {
@@ -157,7 +157,7 @@ section.topo-do-site.flex {
     font-size: 42px;
     line-height: 40px;
     justify-content: center;
-
+    margin-top: 10px; /* Ajuste conforme necessário */
 }
 
 .topo-do-site h1 span {
@@ -176,11 +176,10 @@ section.topo-do-site.flex {
 
 .livro img {
     width: 110px;
-    margin-top: 100px;
+    margin-top: 100px; /* Ajuste conforme necessário */
     margin-left: 10px;
     transition: transform 0.3s ease-in-out;
 }
-
 .livro .resumo {
     position: absolute;
     top: 0;
@@ -193,6 +192,7 @@ section.topo-do-site.flex {
     padding: 20px;
     font-size: 12px;
     box-sizing: content-box;
+    top: -20px; /* Ajuste conforme necessário */
 }
 
 .livro:hover .resumo {
@@ -219,6 +219,34 @@ footer {
     margin-top: 199px;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .interface {
+        max-width: 90%; /* Reduza ainda mais a largura para a resolução de 768px */
+    }
+
+    .topo-do-site h1 {
+        font-size: 1.5em; /* Ajuste conforme necessário para resolução de 768px */
+        padding: 20px; /* Ajuste conforme necessário para resolução de 768px */
+    }
+
+    .livro img {
+        width: 100%; /* Ajuste conforme necessário para resolução de 768px */
+        margin-top: 2em; /* Ajuste conforme necessário para o espaçamento desejado */
+        margin-left: 0; /* Certifique-se de que não há margem à esquerda */
+    }
+
+    .livro .resumo {
+        padding: 0.3em; /* Ajuste conforme necessário para resolução de 768px */
+        font-size: 0.7em; /* Ajuste conforme necessário para resolução de 768px */
+        top: -0.3em; /* Ajuste conforme necessário para resolução de 768px */
+    }
+
+    footer {
+        margin-top: auto; /* Define a margem superior como automática para garantir que o conteúdo não ultrapasse */
+    }
+}
+
 
 
 @media screen and (max-width: 1013px) {
@@ -289,3 +317,78 @@ footer {
         text-align: center;
     }
 }
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: url(imagens/2862101.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        margin: 0; /* Remover a margem padrão do corpo */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interface {
+        max-width: 80%; /* Reduza ainda mais a largura para a resolução de 1024px */
+        margin: auto; /* Centraliza a interface */
+    }
+
+    .topo-do-site h1 {
+        font-size: 2em; /* Ajuste conforme necessário */
+        left: 8em;
+    }
+
+    .livro img {
+        width: 80%; /* Ajuste conforme necessário para resolução de 1024px */
+        margin-top: 4em; /* Ajuste conforme necessário para o espaçamento desejado */
+        margin-left: 1em;
+    }
+
+    .livro .resumo {
+        padding: 0.5em; /* Ajuste conforme necessário para resolução de 1024px */
+        font-size: 0.7em; /* Ajuste conforme necessário para resolução de 1024px */
+        top: -0.5em; /* Ajuste conforme necessário para resolução de 1024px */
+    }
+
+    footer {
+        font-family: "harry", serif;
+        background-color: #D3A625;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%; /* Ocupa toda a largura da tela */
+        margin-top: auto; /* Define a margem superior como automática para garantir que o conteúdo não ultrapasse */
+    }
+}
+
+@media screen and (max-width: 1091px) {
+    .interface {
+        max-width: 90%; /* Ajuste conforme necessário para a resolução de 1091px */
+    }
+
+    .topo-do-site h1 {
+        font-size: 1.8em; /* Ajuste conforme necessário para a resolução de 1091px */
+        padding: 30px; /* Ajuste conforme necessário para a resolução de 1091px */
+    }
+
+    .livro img {
+        width: 100%; /* Ajuste conforme necessário para a resolução de 1091px */
+        margin-top: 3em; /* Ajuste conforme necessário para o espaçamento desejado */
+        margin-left: 0; /* Certifique-se de que não há margem à esquerda */
+    }
+
+    .livro .resumo {
+        padding: 0.4em; /* Ajuste conforme necessário para a resolução de 1091px */
+        font-size: 0.7em; /* Ajuste conforme necessário para a resolução de 1091px */
+        top: -0.4em; /* Ajuste conforme necessário para a resolução de 1091px */
+    }
+
+    footer {
+        margin-top: auto; /* Define a margem superior como automática para garantir que o conteúdo não ultrapasse */
+    }
+}
+
+
