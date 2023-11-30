@@ -286,3 +286,55 @@ footer {
         margin-top: auto; /* Define a margem superior como automática para garantir que o conteúdo não ultrapasse */
     }
 }
+
+/* ... (seu código anterior) ... */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        background-image: url(imagens/castelo.jpeg);
+        background-size: cover;
+        min-height: 100vh;
+        margin-bottom: 11px;
+    }
+
+    .interface {
+        max-width: 80%;
+    }
+
+
+    .topo-do-site h1 {
+        font-size: 36px;
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        height: 300px;
+        animation: flutuar 2s ease-in-out infinite alternate;
+        margin-top: -30px;
+        margin-left: 50px;
+    }
+
+    @keyframes flutuar {
+        100% {
+            top: -10px;
+        }
+    }
+}
+
+   
+footer {
+    font-family: "harry", serif;
+    background-color: #D3A625;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    margin-top: auto; /* Define a margem superior como automática para garantir que o conteúdo não ultrapasse */
+}
+
+
+
+
