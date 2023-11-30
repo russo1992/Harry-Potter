@@ -173,9 +173,9 @@ section.topo-do-site.flex {
     width: 300px;
     height: 100%;
     transition: transform 0.3s ease-in-out;
-    padding-left: 100px;
+    padding-left: 80px;
     margin-left: 400px;
-
+    margin-bottom: 200px;
     
     
 }
@@ -224,6 +224,7 @@ footer {
     body {
         background-image: url(imagens/Fundo.png);
         background-size: cover;
+        width: 100%;
         height: 100h;
 
     }
@@ -256,7 +257,7 @@ footer {
         font-size: 30px;
         padding: 40px;
         margin-left: 50px;
-        margin-top: 10px;
+        margin-top: 20px;
 
     }
 
@@ -271,6 +272,7 @@ footer {
         display: block; 
         margin-bottom: 200px;
         margin-top: -80px;
+        margin-left: 130px;
         
     }
     
