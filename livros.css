@@ -220,6 +220,34 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 425px) {
+    .interface {
+        max-width: 90%; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .topo-do-site h1 {
+        font-size: 1.5em; /* Ajuste conforme necessário para dispositivos móveis */
+        padding: 20px; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .livro img {
+        width: 90%; /* Ajuste conforme necessário para dispositivos móveis */
+        margin-top: 2em; /* Ajuste conforme necessário para dispositivos móveis */
+        margin-left: 0; /* Certifique-se de que não há margem à esquerda */
+    }
+
+    .livro .resumo {
+        padding: 0.3em; /* Ajuste conforme necessário para dispositivos móveis */
+        font-size: 2em; /* Ajuste conforme necessário para dispositivos móveis */
+        top: -0.3em; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    footer {
+        margin-top: auto; /* Define a margem superior como automática para garantir que o conteúdo não ultrapasse */
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .interface {
         max-width: 90%; /* Reduza ainda mais a largura para a resolução de 768px */
@@ -238,7 +266,7 @@ footer {
 
     .livro .resumo {
         padding: 0.3em; /* Ajuste conforme necessário para resolução de 768px */
-        font-size: 0.7em; /* Ajuste conforme necessário para resolução de 768px */
+        font-size: 2em; /* Ajuste conforme necessário para resolução de 768px */
         top: -0.3em; /* Ajuste conforme necessário para resolução de 768px */
     }
 
@@ -346,8 +374,8 @@ footer {
     }
 
     .livro .resumo {
-        padding: 0.5em; /* Ajuste conforme necessário para resolução de 1024px */
-        font-size: 0.7em; /* Ajuste conforme necessário para resolução de 1024px */
+        padding: 2em; /* Ajuste conforme necessário para resolução de 1024px */
+        font-size: 2em; /* Ajuste conforme necessário para resolução de 1024px */
         top: -0.5em; /* Ajuste conforme necessário para resolução de 1024px */
     }
 
